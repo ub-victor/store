@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class HomeController {
-    @Value()
+    @Value("${spring.application.name}")
 
     @RequestMapping("/")
     public String Index() { // this is the method that will handle the request to the root URL
